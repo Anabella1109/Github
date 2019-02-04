@@ -1,5 +1,5 @@
-# Github clone
-#### This is a Github clone website ,Current version:4th february 2019
+# Github Search
+#### This is a website to explore github users and repositories ,Current version:4th february 2019
 
 #### By **TUYISENGE Anabella**
 
