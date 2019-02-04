@@ -24,30 +24,30 @@ addNewUser(user){
    }
 
   ngOnInit() {
-     interface ApiResponse{
-         id:number;
-         name:string
-         avatar_url:string
-         followers:number
-         following:number
+  //    interface ApiResponse{
+  //        id:number;
+  //        name:string
+  //        avatar_url:string
+  //        followers:number
+  //        following:number
 
-    }
-    let promise =new Promise((resolve,reject)=>{
-        this.http.get<ApiResponse>('https://api.github.com/users/' +"Anabella1109"+ '?access_token='+ environment.api_key).toPromise().then(response=>{
+  //   }
+  //   let promise =new Promise((resolve,reject)=>{
+  //       this.http.get<ApiResponse>('https://api.github.com/users/' +"Anabella1109"+ '?access_token='+ environment.api_key).toPromise().then(response=>{
             
-            // this.user.id=response.id
-            // user=new Usernames(response.id,response.name)
+  //          this.user
 
-            resolve()
-        },
-        error=>{
-                // this.user.id=0;
+  //           resolve()
+  //       },
+  //       error=>{
+  //               // this.user.id=0;
                 
-                reject(error)
-            }
-        )
-    })
-    return promise
-  }
+  //               reject(error)
+  //           }
+  //       )
+  //   })
+  //   return promise
+  // }
 
+  }
 }
