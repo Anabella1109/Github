@@ -14,7 +14,9 @@ export class UserFormComponent implements OnInit {
 
     @Output() addUser=new EventEmitter<Usernames>();
 
-  constructor(private http:HttpClient,private request:UserRequestService) {}
+  constructor(private http:HttpClient,private request:UserRequestService) {
+    //   request.userRequest=this.newUser
+  }
    
 
 //    getUser(){
