@@ -14,11 +14,10 @@ export class UserFormComponent implements OnInit {
 
     @Output() addUser=new EventEmitter<Usernames>();
 
-  constructor(private http:HttpClient,private request:UserRequestService) {
-    this.newUser=new Usernames(0,"","",0,0);
-   }
+  constructor(private http:HttpClient,private request:UserRequestService) {}
+   
 
-   getUser(){
+//    getUser(){
 
     //  interface ApiResponse{
     //      id:number;
@@ -41,12 +40,12 @@ export class UserFormComponent implements OnInit {
     //     )
     // })
     
-    this.addUser.emit(this.newUser);
+    // this.addUser.emit(this.newUser);
 
     //  this.users.push(this.newUser)
 
     // return promise
-  }
+//   }
 
   ngOnInit() {
   }
