@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Repos} from '../repos'
  import {Repositories} from '../Repo'
+ import {Usernames} from '../usernames'
+ import {UserNamess} from '../UserNamess'
 
 
 
@@ -10,7 +12,8 @@ import {Repos} from '../repos'
   styleUrls: ['./repositories.component.css']
 })
 export class RepositoriesComponent implements OnInit {
-  repos=Repositories;
+  UserNamess:Usernames[]
+  // user=new Usernames(0,"Kai")
 
   constructor() { }
 

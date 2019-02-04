@@ -1,3 +1,6 @@
-<p>
-  usernames works!
+<p *ngFor='let user of users'>
+  {{user.name}} 
 </p>
+<p>Respositories:11</p>
+<p>Followers:0</p>
+<app-user-form (addUser)="addNewUser($event)"></app-user-form>
