@@ -10,7 +10,7 @@ import {UserRequestService} from '../request/user-request.service'
   styleUrls: ['./user-form.component.css']
 })
 export class UserFormComponent implements OnInit {
-   newUser=new Usernames(0,"","",0,0);
+   newUser=new Usernames(0,"","",0,0,0);
 
     @Output() addUser=new EventEmitter<Usernames>();
 
@@ -48,7 +48,7 @@ export class UserFormComponent implements OnInit {
     // })
     
      this.addUser.emit(this.newUser);
-     this.newUser=new Usernames(0,"","",0,0);
+     this.newUser=new Usernames(0,"","",0,0,0);
 
     //  this.users.push(this.newUser)
 

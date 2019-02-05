@@ -6,6 +6,8 @@ import {Repos} from '../repos'
  import {UserService} from '../users/user.service'
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment.prod';
+import {UserRequestService} from '../request/user-request.service'
+
 
 @Component({
   selector: 'app-usernames',
@@ -16,10 +18,11 @@ import { environment } from 'src/environments/environment.prod';
 export class UsernamesComponent implements OnInit {
   
 users:Usernames[];
+user:Usernames;
 addNewUser(user){
   this.users.push(user)
 }
-  constructor(userSevice:UserService,private http:HttpClient) {
+  constructor(userSevice:UserService,private http:HttpClient,private request:UserRequestService) {
     this.users=userSevice.getUser()
    }
 
@@ -48,6 +51,7 @@ addNewUser(user){
   //   })
   //   return promise
   // }
-
+  this.request.userRequest()
+  this.user=this.request.user
   }
 }
