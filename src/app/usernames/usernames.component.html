@@ -1,7 +1,13 @@
-<img src="{{user.profile_image}}" height="200">
+<div class="row kk">
+<div class="col md 6">
+<app-user-form (addUser)="addNewUser($event)"></app-user-form>
+</div>
+<div class="col md 6">
+<img src="{{user.profile_image}}" height="250">
 <p *ngFor='let user of users'>
   {{user.name}} 
 </p>
 <p>Respositories:{{user.repos}}</p>
 <p>Followers:{{user.followers}}</p>
-<app-user-form (addUser)="addNewUser($event)"></app-user-form>
+</div>
+</div>

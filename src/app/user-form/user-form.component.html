@@ -2,12 +2,12 @@
   <div class="row">
 
       <form (ngSubmit)='getUser()' #userForm='ngForm'>
-        <h2>Fill in this form to search for user</h2>
+        <!-- <h2>Fill in this form to search for user</h2> -->
           
           <div class="form-group">
               <label for="name" >User Name:</label>
               <input type="text"  class="form-control" id="username" placeholder="Enter Username here" [(ngModel)]="newUser.name" name="userName" #userName="ngModel" required>
-              Display {{newUser.name}}
+              <!-- Display {{newUser.name}} -->
               <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                   <p> Name is Required</p>
                   
@@ -43,7 +43,7 @@
                   
               <!-- </div> -->
           <!-- </div> -->
-          <button type="Submit" class="btn btn-lg">Search</button>
+          <button type="Submit" class="btn">Search</button>
       </form>
   </div>
 </div>
