@@ -31,7 +31,7 @@ export class UserRequestService {
             this.user.profile_image=response.avatar_url
             this.user.followers=response.followers
             this.user.following=response.following
-
+// this.user=new Usernames(response.id,response.name,response.avatar_url,response.followers,response.following);
 
             resolve()
         },
@@ -43,7 +43,7 @@ export class UserRequestService {
         )
     })
 
-    return promise
+    return this.user
   }
 }
 
