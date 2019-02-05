@@ -6,18 +6,20 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserFormComponent } from './user-form/user-form.component';
+// import { UserFormComponent } from './user-form/user-form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { UsernamesComponent } from './usernames/usernames.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserFormComponent,
+    // UserFormComponent,
     RepositoriesComponent,
     UsernamesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

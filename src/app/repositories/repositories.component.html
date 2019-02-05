@@ -1,7 +1,8 @@
-<!-- <p *ngFor='let user of UserNamess'>
-   {{user.name}} 
+<img src="{{user.profile_image}}" height="250">
+<p>
+  {{user.name}} 
 </p>
-<p>Respositories:10</p>
-<p>Followers:0</p>
-<app-user-form></app-user-form> -->
-
+<p>Respositories:{{user.repos}}</p>
+<p>Followers:{{user.followers}}</p>
+<p>Following:{{user.following}}</p>
+<p>Created at:{{user.creationDate}}</p>

@@ -1,3 +1,11 @@
-/* div{
-  margin-left:20%;
-} */
+#form{
+  text-align: center;
+}
+label{
+  font-style: oblique;
+  font-size: 15px;
+}
+button{
+  background-color: black;
+  color: white;
+}

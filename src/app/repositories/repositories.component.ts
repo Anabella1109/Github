@@ -12,9 +12,9 @@ import {Repos} from '../repos'
   styleUrls: ['./repositories.component.css']
 })
 export class RepositoriesComponent implements OnInit {
-  UserNamess:Usernames[]
+  // UserNamess:Usernames[]
   // user=new Usernames(0,"Kai")
-
+  repos:Repos[];
   constructor() { }
 
   ngOnInit() {
