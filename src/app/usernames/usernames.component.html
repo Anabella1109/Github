@@ -2,9 +2,9 @@
 <div class="col md 6">
 <app-user-form (addUser)="addNewUser($event)"></app-user-form>
 </div>
-<div class="col md 6">
+<div class="col md 6" *ngFor="let user of users">
 <img src="{{user.profile_image}}" height="250">
-<p *ngFor='let user of users'>
+<p>
   {{user.name}} 
 </p>
 <p>Respositories:{{user.repos}}</p>

@@ -56,7 +56,7 @@ export class UserFormComponent implements OnInit {
   }
 
   ngOnInit() {
-this.request.userRequest()
+this.request.userRequest(this.newUser)
 this.newUser=this.request.user
   }
 

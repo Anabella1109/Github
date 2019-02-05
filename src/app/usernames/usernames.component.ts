@@ -27,31 +27,7 @@ addNewUser(user){
    }
 
   ngOnInit() {
-  //    interface ApiResponse{
-  //        id:number;
-  //        name:string
-  //        avatar_url:string
-  //        followers:number
-  //        following:number
-
-  //   }
-  //   let promise =new Promise((resolve,reject)=>{
-  //       this.http.get<ApiResponse>('https://api.github.com/users/' +"Anabella1109"+ '?access_token='+ environment.api_key).toPromise().then(response=>{
-            
-  //          this.user
-
-  //           resolve()
-  //       },
-  //       error=>{
-  //               // this.user.id=0;
-                
-  //               reject(error)
-  //           }
-  //       )
-  //   })
-  //   return promise
-  // }
-  this.request.userRequest()
+  this.request.userRequest(this.user)
   this.user=this.request.user
   }
 }

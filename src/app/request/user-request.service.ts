@@ -7,12 +7,14 @@ import {UserNamess} from '../UserNamess'
   providedIn: 'root'
 })
 export class UserRequestService {
+users:Usernames[];
+
   user:Usernames;
   constructor(private http:HttpClient) { 
     this.user=new Usernames(0,"","",0,0,0);
   }
 
-  userRequest(){
+  userRequest(user){
 
     interface ApiResponse{
         
@@ -25,7 +27,7 @@ export class UserRequestService {
 
     }
     let promise =new Promise((resolve,reject)=>{
-        this.http.get<ApiResponse>('https://api.github.com/users/' + "daneden"+ '?access_token='+ environment.api_key).toPromise().then(response=>{
+        this.http.get<ApiResponse>('https://api.github.com/users/' +user+ '?access_token='+ environment.api_key).toPromise().then(response=>{
             
             this.user.id=response.id
             this.user.name=response.name
