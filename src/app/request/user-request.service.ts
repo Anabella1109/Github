@@ -25,7 +25,7 @@ export class UserRequestService {
 
     }
     let promise =new Promise((resolve,reject)=>{
-        this.http.get<ApiResponse>('https://api.github.com/users/' +"Anabella1109"+ '?access_token='+ environment.api_key).toPromise().then(response=>{
+        this.http.get<ApiResponse>('https://api.github.com/users/' +"Nicoleha"+ '?access_token='+ environment.api_key).toPromise().then(response=>{
             
             this.user.id=response.id
             this.user.name=response.name
