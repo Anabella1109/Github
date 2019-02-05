@@ -9,6 +9,13 @@ export class UserService {
   getUser(){
     return UserNamess;
   }
+  getId(id){
+    for(let user of UserNamess){
+      if(user.id == id){
+        return user;
+      }
+    }
+  }
   
 
   constructor() { }

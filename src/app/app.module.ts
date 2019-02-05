@@ -11,6 +11,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
 import { UsernamesComponent } from './usernames/usernames.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HighlightDirective } from './highlight.directive';
+import { TimeCountPipe } from './time-count.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HighlightDirective } from './highlight.directive';
     RepositoriesComponent,
     UsernamesComponent,
     NotFoundComponent,
-    HighlightDirective
+    HighlightDirective,
+    TimeCountPipe
   ],
   imports: [
     BrowserModule,

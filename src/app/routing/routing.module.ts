@@ -10,7 +10,8 @@ import {UsernamesComponent} from '../usernames/usernames.component'
 const routes:Routes=[
   {path:"usernames",component:UsernamesComponent},
   {path:'**',component:NotFoundComponent},
-  {path:'user/:id',component:UsernamesComponent},
+  {path:"",redirectTo:"/usernames",pathMatch:"full"},
+  {path:'users/:id',component:UsernamesComponent},
 
 ]
 

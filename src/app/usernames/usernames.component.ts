@@ -31,7 +31,7 @@ addNewUser(user){
   // this.users.push(user)
 }
 goToUrl(id){
-  this.router.navigate(['user',id])
+  this.router.navigate(['/users',id])
 }
   constructor(userSevice:UserService,private http:HttpClient,private request:UserRequestService,private router:Router) {
     this.users=userSevice.getUser()
