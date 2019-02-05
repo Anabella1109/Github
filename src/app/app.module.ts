@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { UsernamesComponent } from './usernames/usernames.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserFormComponent,
     RepositoriesComponent,
-    UsernamesComponent
+    UsernamesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -39,3 +39,9 @@ h1{
 .list-inline a {
   color:rgb(255, 255, 255);
 }
+
+.hh{
+  background-color: grey;
+  padding: 2%;
+  width: 50%;
+}

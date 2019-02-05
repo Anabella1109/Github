@@ -1,6 +1,15 @@
-*{
+form{
   text-align: center;
 }
-form{
-  /* margin-left:40%; */
+label{
+  font-style: oblique;
+  font-size: 15px;
 }
+button{
+  background-color: black;
+  color: white;
+}
+
+ /* form{
+  margin-left:40%; 
+}  */
