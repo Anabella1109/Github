@@ -12,7 +12,7 @@
 <div class="col md 6">
   <div class="ll">
 <img src="{{user.profile_image}}" height="250">
-<p>
+<p appHighlight>
   Username:{{user.name}} 
 </p>
 <p appHighlight>Respositories:{{user.repos}}</p>
@@ -20,7 +20,7 @@
 <p  appHighlight>Following:{{user.following}}</p>
 <p  appHighlight>Created at:{{user.creationDate}}</p>
 <p appHighlight>Been on github since {{user.creationDate|timeCount}} days</p>
-<button class="btn btn-primary" (click)=goToUrl(users.id)>View Details</button>
+<!-- <button class="btn btn-primary" (click)=goToUrl(users.id)>View Details</button> -->
 
 <a href="{{user.repo}}" class="btn btn-black btn-lg" target="_blank">Visit user</a>
 </div>
